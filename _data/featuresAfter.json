@@ -8,5 +8,10 @@
     "title": "... and many more!",
     "description": "Visit our GitHub to find out about our future plans.",
     "image": "images/features/questionmarkFeatureCircle.png"
+  },
+  {
+    "title": "Placeholder",
+    "description": "Make your text famous!",
+    "image": "images/features/emptyFeatureCircle.png"
   }
 ]

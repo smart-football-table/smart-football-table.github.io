@@ -20,6 +20,16 @@
     "image": "images/features/velocityFeatureCircle.png"
   },
   {
+    "title": "LED-Score",
+    "description": "Not only a stadium lighting but also a score display",
+    "image": "images/features/ledFeatureCircle.png"
+  },
+  {
+    "title": "Sound",
+    "description": "Every scored goal will be commentated.",
+    "image": "images/features/soundFeatureCircle.png"
+  },
+  {
     "title": "... and many more!",
     "description": "Visit our GitHub to find out about our future plans.",
     "image": "images/features/questionmarkFeatureCircle.png"
