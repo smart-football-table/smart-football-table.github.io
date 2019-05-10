@@ -4,15 +4,48 @@ layout: default
 bodyClass: page-contact
 ---
 
-<div class="intro intro-small">
+<div class="intro">
   <div class="container">
     <div class="row">
       <div class="col-12">
-        <h1>Contact</h1>
+        <h1>Team</h1>
+        <p>
+          fill with text
+        </p>
       </div>
     </div>
   </div>
 </div>
+
+
+<div class="container pb-6">
+  <div class="row">
+    {% for team in site.team %}
+    <div class="col-12 col-md-6 mb-1">
+      <div class="team team-summary">
+        {% if team.image %}
+        <div class="team-image">
+          <img
+            alt="{{ team.title }} logo"
+            class="img-fluid mb-2"
+            src="{{site.baseurl}}{{ team.image }}"
+          />
+        </div>
+        {% endif %}
+        <div class="team-meta">
+          <h2 class="team-name">{{ team.title }}</h2>
+          <p class="team-description">{{ team.jobtitle }}</p>
+          {% if team.linkedinurl %}
+          <a target="_blank" href="{{ team.linkedinurl }}">LinkedIn</a>
+          {% endif %}
+        </div>
+        <div class="team-content">{{ team.content }}</div>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</div>
+
 <div class="container">
   <div class="row">
     <div class="col-12 col-md-8">
@@ -21,54 +54,8 @@ bodyClass: page-contact
         <li><strong>Email: </strong><a href="mailto:{{ site.data.contact.email }}">
             {{ site.data.contact.email }}</a></li>
         {% if site.data.contact.address %}
-        <li><strong>Address: </strong>{{ site.data.contact.address }}</li>
         {% endif %}
       </ul>
-      <h4 class="mt-4">Business Hours</h4>
-      <table class="table table-sm opening-hours-table">
-        <tr>
-          <td class="day font-weight-bold">Monday</td>
-          <td class="opens">8:30am</td>
-          <td>-</td>
-          <td class="closes">5:00pm</td>
-        </tr>
-        <tr>
-          <td class="day font-weight-bold">Tuesday</td>
-          <td class="opens">8:30am</td>
-          <td>-</td>
-          <td class="closes">5:00pm</td>
-        </tr>
-        <tr>
-          <td class="day font-weight-bold">Wednesday</td>
-          <td class="opens">8:30am</td>
-          <td>-</td>
-          <td class="closes">5:00pm</td>
-        </tr>
-        <tr>
-          <td class="day font-weight-bold">Thursday</td>
-          <td class="opens">8:30am</td>
-          <td>-</td>
-          <td class="closes">5:00pm</td>
-        </tr>
-        <tr>
-          <td class="day font-weight-bold">Friday</td>
-          <td class="opens">8:30am</td>
-          <td>-</td>
-          <td class="closes">5:00pm</td>
-        </tr>
-        <tr>
-          <td class="day font-weight-bold">Saturday</td>
-          <td class="opens">Closed</td>
-          <td></td>
-          <td class="closes"></td>
-        </tr>
-        <tr>
-          <td class="day font-weight-bold">Sunday</td>
-          <td class="opens">Closed</td>
-          <td> </td>
-          <td class="closes"></td>
-        </tr>
-      </table>
     </div>
   </div>
 </div>
