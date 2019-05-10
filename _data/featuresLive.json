@@ -2,26 +2,26 @@
   {
     "title": "Ball Tracking",
     "description": "Inspect the movement of the ball during your game.",
-    "image": "images/features/noun_branding_1885335.svg"
+    "image": "images/features/ballTrackingFeatureCircle.png"
   },
   {
     "title": "Goal Detection",
     "description": "Never ever count your score manually again.",
-    "image": "images/features/noun_The Process_1885341.svg"
+    "image": "images/features/scoreFeatureCircle.png"
   },
   {
     "title": "Position Heatmap",
     "description": "Shows the most frequented positions of the ball on the field.",
-    "image": "images/features/noun_3d modeling_1885342.svg"
+    "image": "images/features/heatmapFeatureCircle.png"
   },
   {
     "title": "Ball Velocity",
     "description": "Find out your shot-power with a livedetection of the ballspeed",
-    "image": "images/features/noun_3d modeling_1885342.svg"
+    "image": "images/features/velocityFeatureCircle.png"
   },
   {
     "title": "... and many more!",
     "description": "Visit our GitHub to find out about our future plans.",
-    "image": "images/features/noun_3d modeling_1885342.svg"
+    "image": "images/features/questionmarkFeatureCircle.png"
   }
 ]
