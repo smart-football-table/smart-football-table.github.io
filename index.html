@@ -1,13 +1,13 @@
 ---
-title: Jekyll Serif - Jekyll Small Business Theme
+title: Smart Football Table
 layout: default
 bodyClass: page-home
 ---
 
 <div class="intro pb-4">
   <div class="container">
-    <h1>Serif - Jekyll Small Business Theme.</h1>
-    <p>Our business helps hundreds of customers with their accounting and taxation needs each year.</p>
+    <h1>Smart Football Table</h1>
+    <p>Combining Internet of Things and Foosball to create an intelligent football table.</p>
   </div>
 </div>
 
@@ -22,40 +22,36 @@ bodyClass: page-home
       </div>
     </div>
     <div class="call-box-bottom">
-      <a href="{{site.baseurl}}/contact" class="button">Contact</a>
+      <a href="{{site.baseurl}}/contact" class="button">Github</a>
     </div>
   </div>
 </div>
 
-<div class="container pt-8 pt-md-10">
-  <div class="row justify-content-start">
+
+
+<div class="container pt-5 pb-5 pt-md-7 pb-md-7">
+  <div class="row justify-content-center">
     <div class="col-12">
-      <h2 class="title-3 text-dark mb-3">Our Services</h2>
+      <h2 class="title-3 text-dark mb-4">Features while playing the match</h2>
     </div>
-    {% for service in site.services %}
-    <div class="col-12 col-md-4 mb-1">
-      <div class="service service-summary">
-        <div class="service-content">
-          <h2 class="service-title">
-            <a href="{{site.baseurl}}{{ service.url }}">{{ service.title }}</a>
-          </h2>
-          {{ service.content | markdownify | strip_html | truncate: 100 }}
-        </div>
+    {% for feature in site.data.featuresLive %}
+    <div class="col-12 col-md-6 col-lg-4 mb-2">
+      <div class="feature">
+        {% if feature.image %}<div class="feature-image"><img alt="{{ feature.title }} logo" src="{{ feature.image }}" /></div> {% endif %}
+        <h2 class="feature-title">{{ feature.title }}</h2>
+        <div class="feature-content">{{ feature.description }}</div>
       </div>
     </div>
     {% endfor %}
-    <div class="col-12 text-center">
-      <a class="button button-primary mt-2" href="{{site.baseurl}}/services">View All Services</a>
-    </div>
   </div>
 </div>
 
 <div class="container pt-5 pb-5 pt-md-7 pb-md-7">
   <div class="row justify-content-center">
     <div class="col-12">
-      <h2 class="title-3 text-dark mb-4">Our Features</h2>
+      <h2 class="title-3 text-dark mb-4">Features after the match</h2>
     </div>
-    {% for feature in site.data.features %}
+    {% for feature in site.data.featuresAfter %}
     <div class="col-12 col-md-6 col-lg-4 mb-2">
       <div class="feature">
         {% if feature.image %}<div class="feature-image"><img alt="{{ feature.title }} logo" src="{{ feature.image }}" /></div> {% endif %}
