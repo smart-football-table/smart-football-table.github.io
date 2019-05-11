@@ -1,6 +1,5 @@
 ---
-title: 'Business Advisory'
-image: '/services/default.png'
+title: 'Ball Detection'
 ---
 
 Lorem markdownum, dictis umbrosum dextrum, Lelegeia quamquam distantes pares

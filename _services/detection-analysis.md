@@ -1,6 +1,5 @@
 ---
-title: 'Business Sales'
-image: '/services/default.png'
+title: 'Detection Analysis'
 ---
 
 Cyanee nec pedicis positi. Esse et diem forte quoque et ieiunia

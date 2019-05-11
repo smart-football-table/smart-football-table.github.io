@@ -1,6 +1,5 @@
 ---
-title: "Superannuation"
-image: "/services/default.png"
+title: "Sound-Module"
 ---
 
 Lorem markdownum aequalis strigis. Saetigeri iubeas, vultu huic alvum nondum
