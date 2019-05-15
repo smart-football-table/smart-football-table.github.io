@@ -6,7 +6,7 @@ The system behind SFT became large really fast. Rethinking the architecture happ
 
 ## Overview
 
-![architecture](/modules/smart-football-table/SmartFootballTable_Architecture.png){:class="img-responsive"}
+![architecture](/modules/smart-football-table/architecture/SmartFootballTable_Architecture.png){:class="img-responsive"}
 
 The modules combined in SFT are the following:
 
