@@ -6,9 +6,7 @@ ThisIsJustADraft
 
 ## Smart Football Table - Detection
 
-This repository contains the detection part of the Smart Football Table project. After getting the position of the ball, calculations are done. The detection is done with a python-script which is called from a java-programm, which handles the position afterwards.
-
-![detection-example](../modules/smart-football-table-detection/detectionExampleGif.gif)
+![detection-example-gif](../modules/smart-football-table-detection/detectionExampleGif.gif)
 
 ### Summary
 
