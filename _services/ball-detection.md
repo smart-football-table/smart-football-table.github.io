@@ -6,7 +6,7 @@ ThisIsJustADraft
 
 ## Smart Football Table - Detection
 
-![detection-example](../modules/smart-football-table-detection/detectionExample.png)
+![detection-example-gif](/modules/smart-football-table-detection/detectionExampleGif.gif)
 
 ### Summary
 
