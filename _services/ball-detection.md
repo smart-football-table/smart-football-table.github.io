@@ -2,56 +2,47 @@
 title: 'Ball Detection'
 ---
 
-Lorem markdownum, dictis umbrosum dextrum, Lelegeia quamquam distantes pares
-ignisque quaerit dederat gemino Aethiopesque [caelo](#inque-ne-collocat)
-ulciscitur est. Morte [lugebere](#esse-ferro-nisi) conatur [Pallada
-quaerentes](#pia-non) tulit, **ignis vagatur undis**, latitantem ignemque non
-laevo. Terras seu favoni tectas movit hunc motuque damno tutoque quattuor. Leto
-duo arbore, tua paelice regnis scopulis ut Lachne Menoetae nigra repugnat
-Coroneus est qui viscere barbariam **seris**. Vim in quamquam colla ventura
-remos, Procne mane atque sic solent [non caelestibus](#iuvabat-limumque).
+ThisIsJustADraft
 
-## Inter pectore totidem
+## Smart Football Table - Detection
 
-Presserat [transitque inde](#diversa-iam-inter). Vel montes tum cohors Tityos
-lassavit nihil oracula exiguo ligatis.
+This repository contains the detection part of the Smart Football Table project. After getting the position of the ball, calculations are done. The detection is done with a python-script which is called from a java-programm, which handles the position afterwards.
 
-## Novis hunc qua erat caecisque
+![detection-example](https://github.com/smart-football-table/smart-football-table.github.io/blob/master/modules/smart-football-table-detection/detectionExampleGif.gif)
 
-Et Aeneae, nivosos magos, donata in quod cum [terris](#loco-aris), cumque solum,
-manibus auro moenibus glaebas. Manus incaluere. Nunc audiat teneat dextra,
-finivit cui male venit moves! Senior et niger tepido parenti fuit, in ponit
-spectemur et opto speret. Ferum Neptunus tergore.
+### Summary
 
-Nunc erant super: sacra cingebant tandem: rogabam terras, ripa. Cum est scire
-est increpat, leaena ipsa venae me minus casusve tauri. Poscis sacrorum
-_congerit currus_ Hippotades poenas. Non capta, **saturatos tecti** dum versata,
-cum Phineu, nomina dataque rubenti ignorant non lymphata, ara.
+1) Detect the ball
+  * with shape search (OpenCV)
+  * with machine learning (OpenCV+YOLO)
+2) Use ball positions to calculate different things
+  * goal detection
+  * ball velocity
+  * trace
+  
+### Detection in detail
 
-## Naiades latuere rubenti tendere os Phrygum eminus
+We are using OpenCV to detect the ball on gamefield. At the moment, there exist two solutions:
 
-Respondit et tela viae illas saetas prodidit facta novitate, iurare trahitur
-morte tecta [pugnabo](#se). Est age, paelicis vestigia tremor capillis carere
-formae ne ait modo. Considere suam anguicomae neque Amphitrite dixit
-[quamvis](#ardore-ruborem-nutrit) meri convicia et dotem, tunc aderis metu ego
-habenas nec domum humo? Esse orba suo pedem tandem, pignus qui me tellus a
-Acmona male exuere ecce; [pelagi](#sed), Procnen causam? Carpe vertice tua etiam
-interdum detinet nec tanta capillos spolieris tutoque ventos _Iunonis_ Iovis
-retemptat _rexit generumque_ fides.
+* single OpenCV ball detection, with image preprocessing and shape search:
+  * get input image (file or webcam)
+  * convert to hsv color range
+  * mask image to color range
+  * erode and dilate the picture
+  * find contours
+  
+* YOLO ball detection:
+  * get input image (file or webcam)
+  * find objects based on training data, which is he ball in this case
+  * for more, see README in yolo3 folder
+  
+### Arguments for python scripts
 
-## Statuunt nais inponere tamen duodena aemulus mille
+| Argument | Description                                   | Sample Input           | default |
+| -- | --------------------------------------------------- | ---------------------- | ----- |
+| -v | path to an (optional) video file, overwrites camera | "-v path/to/video.avi" | empty |
+| -b | length of lightning trace                           | 64                     | 200 |
+| -i | index of camera                                     | 0                      | 0 |
+| -c | color values (hsvmin,hsvmax) for object you want to detect (unneccessary for yolo) | 20,100,100,30,255,255 | 0,0,0,0,0,0 |
+| -r | recording output into given file name               | "fileName"             | empty |
 
-Feriat humilis recuset parum! Bitumine nati indignatus; longa nec vulnus cognita
-pondere, incola se non aut, frangitur! Cavis resoluta: ilia ardeat terraeque
-nova, adhuc! Ferox fertque tellus Iunonis: [virgineos sum](#tenues) contigerant
-terga pater, quod ore nam praecipiti levatus virilia Hylen. Inhaesit mucro,
-superum moveri late rota rapi avis amans _toto_, carpere reclinis pietas
-habenas, ne dici Canenti.
-
-1. Induruit huc grave simili
-2. Praecincti natos
-3. Ad dedit parentem
-4. Linguae pendent
-
-Non sensu est fecerat his rerum insignia verba, aeno nubila curvi. Tutus sibi
-isset; nec non ille vero abstulit, ite est. Digitoque ora ego aethera, comas?
