@@ -2,36 +2,43 @@
   {
     "title": "Ball Tracking",
     "description": "Inspect the movement of the ball during your game.",
-    "image": "images/features/ballTrackingFeatureCircle.png"
+    "image": "images/features/ballTrackingFeatureCircle.png",
+    "url": "https://github.com/smart-football-table/smart-football-table-detection"
   },
   {
     "title": "Goal Detection",
     "description": "Never ever count your score manually again.",
-    "image": "images/features/scoreFeatureCircle.png"
+    "image": "images/features/scoreFeatureCircle.png",
+    "url": "https://github.com/smart-football-table/smart-football-table-cognition"
   },
   {
     "title": "Position Heatmap",
     "description": "Shows the most frequented positions of the ball on the field.",
-    "image": "images/features/heatmapFeatureCircle.png"
+    "image": "images/features/heatmapFeatureCircle.png",
+    "url": "https://github.com/smart-football-table/smart-football-table-ui"
   },
   {
     "title": "Ball Velocity",
     "description": "Find out your shot-power with a livedetection of the ballspeed",
-    "image": "images/features/velocityFeatureCircle.png"
+    "image": "images/features/velocityFeatureCircle.png",
+    "url": "https://github.com/smart-football-table/smart-football-table-cognition"
   },
   {
     "title": "LED-Score",
     "description": "Not only a stadium lighting but also a score display",
-    "image": "images/features/ledFeatureCircle.png"
+    "image": "images/features/ledFeatureCircle.png",
+    "url": "https://github.com/smart-football-table/smart-football-table-ledcontrol"
   },
   {
     "title": "Sound",
     "description": "Every scored goal will be commentated.",
-    "image": "images/features/soundFeatureCircle.png"
+    "image": "images/features/soundFeatureCircle.png",
+    "url": "https://github.com/smart-football-table/smart-football-table-sound"
   },
   {
     "title": "... and many more!",
     "description": "Visit our GitHub to find out about our future plans.",
-    "image": "images/features/questionmarkFeatureCircle.png"
+    "image": "images/features/questionmarkFeatureCircle.png",
+    "url":
   }
 ]

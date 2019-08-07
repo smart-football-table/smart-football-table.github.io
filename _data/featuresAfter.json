@@ -2,16 +2,19 @@
   {
     "title": "Data Analysis",
     "description": "Reexpirience the match with new insights.",
-    "image": "images/features/analysisFeatureCircle.png"
+    "image": "images/features/analysisFeatureCircle.png",
+    "url": "https://github.com/smart-football-table/smart-football-table-logread"
   },
   {
     "title": "... and many more!",
     "description": "Visit our GitHub to find out about our future plans.",
-    "image": "images/features/questionmarkFeatureCircle.png"
+    "image": "images/features/questionmarkFeatureCircle.png",
+    "url":
   },
   {
     "title": "Placeholder",
     "description": "Make your text famous!",
-    "image": "images/features/emptyFeatureCircle.png"
+    "image": "images/features/emptyFeatureCircle.png",
+    "url":
   }
 ]

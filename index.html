@@ -28,7 +28,7 @@ bodyClass: page-home
     <div class="col-12 col-md-6 col-lg-4 mb-2">
       <div class="feature">
         {% if feature.image %}<div class="feature-image"><img alt="{{ feature.title }} logo" src="{{ feature.image }}" /></div> {% endif %}
-        <h2 class="feature-title">{{ feature.title }}</h2>
+        {% if feature.url %}<a class="feature-title" href="{{ feature.url }}">{{ feature.title }}</a><br> {% else %} <h2 class="feature-title">{{ feature.title }}</h2><br> {% endif %}
         <div class="feature-content">{{ feature.description }}</div>
       </div>
     </div>
@@ -44,24 +44,25 @@ bodyClass: page-home
     <div class="col-12 col-md-6 col-lg-4 mb-2">
       <div class="feature">
         {% if feature.image %}<div class="feature-image"><img alt="{{ feature.title }} logo" src="{{ feature.image }}" /></div> {% endif %}
-        <h2 class="feature-title">{{ feature.title }}</h2>
+        {% if feature.url %}<a class="feature-title" href="{{ feature.url }}">{{ feature.title }}</a><br> {% else %} <h2 class="feature-title">{{ feature.title }}</h2><br> {% endif %}
         <div class="feature-content">{{ feature.description }}</div>
       </div>
     </div>
     {% endfor %}
   </div>
-
+<!--
   <br><br><br>
   <div class="row justify-content-center">
     <div class="col-12">
       <h2 class="title-3 text-dark mb-4">Impressions:</h2>
     </div>
     {% for impressions in site.data.impressions %}
-    <div class="col-12 col-md-6 col-lg-4 mb-2">
-      <div class="feature">
-        {% if impressions.image %}<div class="feature-image"><img alt="{{ impressions.title }} logo" src="{{ impressions.image }}" /></div> {% endif %}
+    <div>
+      <div>
+        {% if impressions.image %}<div style="max-width:50px;"><img alt="{{ impressions.title }} logo" src="{{ impressions.image }}" /></div> {% endif %}
       </div>
     </div>
     {% endfor %}
   </div>
 </div>
+-->
