@@ -244,8 +244,8 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  github-pages (>= 203)
-  jekyll-environment-variables
+  github-pages (>= 204)
+  jekyll-environment-variables (>= 1.0.1)
 
 BUNDLED WITH
    1.17.3
