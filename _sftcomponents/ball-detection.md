@@ -2,8 +2,6 @@
 title: 'Ball Detection'
 ---
 
-ThisIsJustADraft
-
 ## Smart Football Table - Detection
 
 ![detection-example-gif](/modules/smart-football-table-detection/detectionExampleGif.gif)
@@ -13,6 +11,7 @@ ThisIsJustADraft
 1) Detect the ball
   * with shape search (OpenCV)
   * with machine learning (OpenCV+YOLO)
+
 2) Use ball positions to calculate different things
   * goal detection
   * ball velocity

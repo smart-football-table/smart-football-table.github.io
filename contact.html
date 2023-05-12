@@ -9,51 +9,20 @@ bodyClass: page-contact
     <div class="row">
       <div class="col-12">
         <h1>Contact</h1>
-        <p>
-          fill with text
-        </p>
       </div>
     </div>
   </div>
 </div>
-
-<!--
-<div class="container pb-6">
-  <div class="row">
-    {% for team in site.team %}
-    <div class="col-12 col-md-6 mb-1">
-      <div class="team team-summary">
-        {% if team.image %}
-        <div class="team-image">
-          <img
-            alt="{{ team.title }} logo"
-            class="img-fluid mb-2"
-            src="{{site.baseurl}}{{ team.image }}"
-          />
-        </div>
-        {% endif %}
-        <div class="team-meta">
-          <h2 class="team-name">{{ team.title }}</h2>
-          <p class="team-description">{{ team.jobtitle }}</p>
-          {% if team.linkedinurl %}
-          <a target="_blank" href="{{ team.linkedinurl }}">LinkedIn</a>
-          {% endif %}
-        </div>
-        <div class="team-content">{{ team.content }}</div>
-      </div>
-    </div>
-    {% endfor %}
-  </div>
-</div>
--->
 
 <div class="container">
   <div class="row">
     <div class="col-12 col-md-8">
       <ul>
-        <li><strong>Phone: </strong>{{ site.data.contact.phone }}</li>
-        <li><strong>Email: </strong><a href="mailto:{{ site.data.contact.email }}">
-            {{ site.data.contact.email }}</a></li>
+        <strong>Marco Müller</strong>
+      </ul>
+      <ul>
+        <a href="mailto:{{ site.data.contact.email }}">
+        {{ site.data.contact.email }}</a>
         {% if site.data.contact.address %}
         {% endif %}
       </ul>

@@ -1,7 +1,7 @@
 ---
 title: How
 layout: default
-bodyClass: page-services-list
+bodyClass: sftcomponents-list
 ---
 
 <div class="intro">
@@ -10,7 +10,7 @@ bodyClass: page-services-list
       <div class="col-12">
         <h1>How it works</h1>
         <p>
-          To create this table many different technologies are neccessary. Below you can find explanations and reasons for each part of the system.
+          To create this table many different technologies are necessary. Below you can find explanations and reasons for each part of the system.
         </p>
       </div>
     </div>
@@ -19,15 +19,14 @@ bodyClass: page-services-list
 
 <div class="container pb-6">
   <div class="row">
-    {% for service in site.services %}
+    {% for sftcomponent in site.sftcomponents %}
     <div class="col-12 col-md-4 mb-4">
       <div class="feature">
-        <div class="service service-summary">
-          <div class="service-content">
-            <h2 class="service-title">
-              <a href="{{site.baseurl}}{{ service.url }}">{{ service.title }}</a>
+        <div class="sftcomponent-summary">
+          <div class="sftcomponent-content">
+            <h2 class="sftcomponent">
+              <a href="{{site.baseurl}}{{ sftcomponent.url }}">{{ sftcomponent.title }}</a>
             </h2>
-            <!--{{ service.content | markdownify | strip_html | truncate: 100 }}-->
           </div>
         </div>
       </div>

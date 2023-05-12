@@ -1,0 +1,14 @@
+.sftcomponent-summary {
+  display: flex;
+  align-items: flex-start;
+  .sftcomponent-content {
+    flex: 1;
+    .sftcomponent-title {
+      font-family: $font-family-heading;
+      font-size: 1.6rem;
+    }
+    p {
+      color: $secondary;
+    }
+  }
+}

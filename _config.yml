@@ -4,22 +4,16 @@ permalink: pretty
 title: 'Jekyll'
 
 collections:
-  services:
+  sftcomponents:
     output: true
-    permalink: /services/:path/
-  team:
-    output: true
-    permalink: /team/:path/
-  testimonials:
-    output: true
-    permalink: /testimonials/:path/
+    permalink: /component/:path/
 
 defaults:
   - scope:
-      type: services
+      type: sftcomponents
     values:
-      layout: service
-      bodyClass: page-services-single
+      layout: sftcomponent
+      bodyClass: page-sftcomponent-single
   - scope:
       path: 'images'
     values:
@@ -27,8 +21,6 @@ defaults:
 
 sass:
   style: compact # possible values: nested expanded compact compressed
-
-google_analytics_id: null
 
 plugins:
   - jekyll-environment-variables
