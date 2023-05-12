@@ -30,7 +30,7 @@ We are using OpenCV to detect the ball on gamefield. At the moment, there exist 
   
 * YOLO ball detection:
   * get input image (file or webcam)
-  * find objects based on training data, which is he ball in this case
+  * find objects based on training data, which is the ball in this case
   * for more, see README in yolo3 folder
   
 ### Arguments for python scripts

@@ -1,7 +1,7 @@
 ---
 title: Build
 layout: default
-bodyClass: page-team-list
+bodyClass: sftcomponents-list
 ---
 
 <div class="intro">
@@ -10,9 +10,27 @@ bodyClass: page-team-list
       <div class="col-12">
         <h1>Build Your Own Smart Football Table</h1>
         <p>
-          fill with text
+          On this page we share our guide to build your own setup.
         </p>
       </div>
     </div>
+  </div>
+</div>
+
+<div class="container pb-6">
+  <div class="row">
+    {% for sftbuildguide in site.sftbuildguides %}
+    <div class="col-12 col-md-4 mb-4">
+      <div class="feature">
+        <div class="sftcomponent-summary">
+          <div class="sftcomponent-content">
+            <h2 class="sftcomponent">
+              <a href="{{site.baseurl}}{{ sftbuildguide.url }}">{{ sftbuildguide.title }}</a>
+            </h2>
+          </div>
+        </div>
+      </div>
+    </div>
+    {% endfor %}
   </div>
 </div>

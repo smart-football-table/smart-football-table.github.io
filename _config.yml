@@ -7,10 +7,18 @@ collections:
   sftcomponents:
     output: true
     permalink: /component/:path/
+  sftbuildguides:
+    output: true
+    permalink: /build/:path/
 
 defaults:
   - scope:
       type: sftcomponents
+    values:
+      layout: sftcomponent
+      bodyClass: page-sftcomponent-single
+  - scope:
+      type: sftbuildguides
     values:
       layout: sftcomponent
       bodyClass: page-sftcomponent-single
